@@ -12,6 +12,11 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  
+}
+/* add a smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
 }
 
 div#main {
@@ -122,4 +127,27 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* animate the scroll down arrow bounce up and down */
+
+/* @keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+} */
+
+/* add a slide In Left animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
